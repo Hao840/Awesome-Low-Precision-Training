@@ -1,6 +1,8 @@
 # Awesome Low-Precision Training
 A collection of research papers on low-precision training for foundation models, organized by numerical representation formats. The collection also includes quantization-aware training techniques for large language models.
 
+\*🤖 *indicates the corresponding paper contains experiments using LLM.*
+
 ## Contents
   - [**Fixed-Point and Integer-Based Methods**](#Fixed-Point-and-Integer-Based-Methods)
     - [**Fixed-Point**](#Fixed-Point)
@@ -32,21 +34,21 @@ A collection of research papers on low-precision training for foundation models,
 
 #### General methods
 
--  [**2025 | TPAMI**] Latent Weight Quantization for Integerized Training of Deep Neural Networks [[📄 paper](https://www.computer.org/csdl/journal/tp/2025/04/10834560/23mYTMVTReM)]
+-  [**2025 | TPAMI | 🤖**] Latent Weight Quantization for Integerized Training of Deep Neural Networks [[📄 paper](https://www.computer.org/csdl/journal/tp/2025/04/10834560/23mYTMVTReM)]
 -  [**2025 | FCS**] Efficient Deep Neural Network Training via Decreasing Precision With Layer Capacity [[📄 paper](https://link.springer.com/content/pdf/10.1007/s11704-024-40669-3.pdf)]
--  [**2025 | arXiv**] Accurate INT8 Training Through Dynamic Block-Level Fallback [[📄 paper](https://arxiv.org/abs/2503.08040)]
--  [**2024 | ICML**] Jetfire: Efficient and Accurate Transformer Pretraining With INT8 Data Flow and Per-Block Quantization [[📄 paper](https://github.com/thu-ml/Jetfire-INT8Training)]
+-  [**2025 | arXiv | 🤖**] Accurate INT8 Training Through Dynamic Block-Level Fallback [[📄 paper](https://arxiv.org/abs/2503.08040)]
+-  [**2024 | ICML | 🤖**] Jetfire: Efficient and Accurate Transformer Pretraining With INT8 Data Flow and Per-Block Quantization [[📄 paper](https://github.com/thu-ml/Jetfire-INT8Training)]
 -  [**2024 | ICML**] AMPA: Adaptive Mixed Precision Allocation for Low-Bit Integer Training [[📄 paper](https://proceedings.mlr.press/v235/ding24b.html)]
 -  [**2024 | ICASSP**] Activation Compression of Graph Neural Networks using Block-wise Quantization with Improved Variance Minimization [[📄 paper](https://arxiv.org/abs/2309.11856)] [[💻 code](https://github.com/saintslab/i-Exact)]
--  [**2024 | arXiv**] Direct Quantized Training of Language Models with Stochastic Rounding [[📄 paper](https://arxiv.org/abs/2412.04787)] [[💻 code](https://github.com/KYuuto1006/DQT)]
+-  [**2024 | arXiv | 🤖**] Direct Quantized Training of Language Models with Stochastic Rounding [[📄 paper](https://arxiv.org/abs/2412.04787)] [[💻 code](https://github.com/KYuuto1006/DQT)]
 -  [**2024 | arXiv**] Towards Accurate and Efficient Sub-8-Bit Integer Training [[📄 paper](https://arxiv.org/abs/2411.10948)]
 -  [**2024 | arXiv**] HLQ: Fast and Efficient Backpropagation via Hadamard Low-rank Quantization [[📄 paper](http://arxiv.org/abs/2406.15102)]
--  [**2024 | arXiv**] Q-GaLore: Quantized GaLore with INT4 Projection and Layer-Adaptive Low-Rank Gradients [[📄 paper](http://arxiv.org/abs/2401.17544)] [[💻 code](https://github.com/VITA-Group/Q-GaLore)]
+-  [**2024 | arXiv | 🤖**] Q-GaLore: Quantized GaLore with INT4 Projection and Layer-Adaptive Low-Rank Gradients [[📄 paper](http://arxiv.org/abs/2401.17544)] [[💻 code](https://github.com/VITA-Group/Q-GaLore)]
 -  [**2023 | NeurIPS**] Stable and Low-Precision Training for Large-Scale Vision-Language Models [[📄 paper](https://arxiv.org/abs/2304.13013)]
 -  [**2023 | NeurIPS**] Training Transformers With 4-Bit Integers [[📄 paper](https://arxiv.org/abs//2306.11987)] [[💻 code](https://github.com/haochengxi/Train_Transformers_with_INT4)]
 -  [**2023 | ICML**] Few-bit Backward: Quantized Gradients of Activation Functions for Memory Footprint Reduction [[📄 paper](https://proceedings.mlr.press/v202/novikov23a/novikov23a.pdf)] [[💻 code](https://github.com/skolai/fewbit)]
 -  [**2023 | CoLLAs**] Hadamard Domain Training with Integers for Class Incremental Quantized Learning [[📄 paper](https://arxiv.org/abs/1803.03383)] [[💻 code](https://github.com/Intelligent-Microsystems-Lab/QuantizedCIL)]
--  [**2022 | ICML**] Gact: Activation Compressed Training for Generic Network Architectures [[📄 paper](https://proceedings.mlr.press/v162/liu22v/liu22v.pdf)] [[💻 code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
+-  [**2022 | ICML**] GACT: Activation Compressed Training for Generic Network Architectures [[📄 paper](https://proceedings.mlr.press/v162/liu22v/liu22v.pdf)] [[💻 code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
 -  [**2022 | Neurocomputing**] Towards Efficient Full 8-bit Integer DNN Online Training on Resource-limited Devices without Batch Normalization [[📄 paper](http://arxiv.org/abs/2105.13890)]
 -  [**2022 | TPDS**] NITI: Training Integer Neural Networks Using Integer-only Arithmetic [[📄 paper](https://arxiv.org/abs/2009.13108)] [[💻 code](https://github.com/wangmaolin/niti)]
 -  [**2021 | ICML**] ActNN: Reducing Training Memory Footprint via 2-Bit Activation Compressed Training [[📄 paper](http://proceedings.mlr.press/v139/chen21z/chen21z.pdf)] [[💻 code](https://github.com/ucbrise/actnn)]
@@ -73,22 +75,22 @@ A collection of research papers on low-precision training for foundation models,
 
 #### Optimizer-state-targeted methods
 
--  [**2024 | NeurIPS**] MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence [[📄 paper](https://arxiv.org/abs/2405.15593)] [[💻 code](https://github.com/IST-DASLab/MicroAdam)]
+-  [**2024 | NeurIPS | 🤖**] MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence [[📄 paper](https://arxiv.org/abs/2405.15593)] [[💻 code](https://github.com/IST-DASLab/MicroAdam)]
 -  [**2024 | NeurIPS**] 4-bit Shampoo for Memory-Efficient Network Training [[📄 paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/e5b4633454cb2174779d294ccda02318-Paper-Conference.pdf)] [[💻 code](https://github.com/Sike-Wang/low-bit-Shampoo)]
--  [**2024 | EMNLP**] Exploring Quantization for Efficient Pre-Training of Transformer Language Models [[📄 paper](https://aclanthology.org/2024.findings-emnlp.787/)]
--  [**2024 | arXiv**] Memory-Efficient 4-bit Preconditioned Stochastic Optimization [[📄 paper](https://arxiv.org/pdf/2412.10663)]
--  [**2023 | NeurIPS**] Memory Efficient Optimizers with 4-bit States [[📄 paper](https://arxiv.org/abs/2309.01507)] [[💻 code](https://github.com/thu-ml/low-bit-optimizers)]
--  [**2023 | arXiv**] Qft: Quantized Full-Parameter Tuning of Llms With Affordable Resources [[📄 paper](https://arxiv.org/abs/2310.07147)]
--  [**2022 | ICLR**] 8-bit Optimizers via Block-wise Quantization [[📄 paper](https://arxiv.org/abs/2110.02861v2)]
+-  [**2024 | EMNLP | 🤖**] Exploring Quantization for Efficient Pre-Training of Transformer Language Models [[📄 paper](https://aclanthology.org/2024.findings-emnlp.787/)]
+-  [**2024 | arXiv | 🤖**] Memory-Efficient 4-bit Preconditioned Stochastic Optimization [[📄 paper](https://arxiv.org/pdf/2412.10663)]
+-  [**2023 | NeurIPS | 🤖**] Memory Efficient Optimizers with 4-bit States [[📄 paper](https://arxiv.org/abs/2309.01507)] [[💻 code](https://github.com/thu-ml/low-bit-optimizers)]
+-  [**2023 | arXiv | 🤖**] QFT: Quantized Full-Parameter Tuning of Llms With Affordable Resources [[📄 paper](https://arxiv.org/abs/2310.07147)]
+-  [**2022 | ICLR | 🤖**] 8-bit Optimizers via Block-wise Quantization [[📄 paper](https://arxiv.org/abs/2110.02861v2)]
 
 #### Communication-targeted methods
 
--  [**2025 | TPAMI**] LoCo: Low-Bit Communication Adaptor for Large-Scale Model Training [[📄 paper](https://arxiv.org/pdf/2407.04480)] [[💻 code](https://github.com/XingyuXie/LoCo)]
--  [**2024 | NeurIPS**] SDP4Bit: Toward 4-bit Communication Quantization in Sharded Data Parallelism for LLM Training [[📄 paper](https://arxiv.org/pdf/2410.15526)] [[💻 code](https://github.com/bytedance/SDP4Bit)]
--  [**2024 | NSDI**] THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression [[📄 paper](https://www.usenix.org/system/files/nsdi24-li-minghao.pdf)] [[💻 code](https://github.com/sophiali06/byteps_thc)]
--  [**2023 | ICML**] Quantized Distributed Training of Large Models with Convergence Guarantees [[📄 paper](https://proceedings.mlr.press/v202/markov23a/markov23a.pdf)]
--  [**2023 | arXiv**] ZeRO++: Extremely Efficient Collective Communication for Giant Model Training [[📄 paper](https://arxiv.org/pdf/2306.10209)]
--  [**2022 | NeurIPS**] Fine-tuning Language Models over Slow Networks using Activation Quantization with Guarantees [[📄 paper](https://arxiv.org/pdf/2206.01299)]
+-  [**2025 | TPAMI | 🤖**] LoCo: Low-Bit Communication Adaptor for Large-Scale Model Training [[📄 paper](https://arxiv.org/pdf/2407.04480)] [[💻 code](https://github.com/XingyuXie/LoCo)]
+-  [**2024 | NeurIPS | 🤖**] SDP4Bit: Toward 4-bit Communication Quantization in Sharded Data Parallelism for LLM Training [[📄 paper](https://arxiv.org/pdf/2410.15526)] [[💻 code](https://github.com/bytedance/SDP4Bit)]
+-  [**2024 | NSDI | 🤖**] THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression [[📄 paper](https://www.usenix.org/system/files/nsdi24-li-minghao.pdf)] [[💻 code](https://github.com/sophiali06/byteps_thc)]
+-  [**2023 | ICML | 🤖**] Quantized Distributed Training of Large Models with Convergence Guarantees [[📄 paper](https://proceedings.mlr.press/v202/markov23a/markov23a.pdf)]
+-  [**2023 | arXiv | 🤖**] ZeRO++: Extremely Efficient Collective Communication for Giant Model Training [[📄 paper](https://arxiv.org/pdf/2306.10209)]
+-  [**2022 | NeurIPS | 🤖**] Fine-tuning Language Models over Slow Networks using Activation Quantization with Guarantees [[📄 paper](https://arxiv.org/pdf/2206.01299)]
 -  [**2020 | NeurIPS**] Adaptive Gradient Quantization for Data-Parallel SGD [[📄 paper](https://proceedings.neurips.cc/paper/2020/file/20b5e1cf8694af7a3c1ba4a87f073021-Paper.pdf)] [[💻 code](https://github.com/Tabrizian/learning-to-quantize)]
 -  [**2019 | ICML**] DOUBLESQUEEZE: Parallel Stochastic Gradient Descent with Double-pass Error-Compensated Compression [[📄 paper](https://proceedings.mlr.press/v97/tang19d.html)]
 -  [**2019 | NeurIPS**] Double Quantization for Communication-Efficient Distributed Optimization [[📄 paper](https://papers.nips.cc/paper_files/paper/2019/hash/ea4eb49329550caaa1d2044105223721-Abstract.html)]
@@ -98,7 +100,7 @@ A collection of research papers on low-precision training for foundation models,
 ### Binary
 
 -  [**2024 | arXiv**] 1-Bit FQT: Pushing the Limit of Fully Quantized Training to 1-bit [[📄 paper](https://arxiv.org/abs/2408.14267)] [[💻 code](https://github.com/Gaochang-bjtu/1-bit-FQT)]
--  [**2023 | ICLR**] Maximizing Communication Efficiency for Large-scale Training via 0/1 Adam [[📄 paper](https://arxiv.org/pdf/2202.06009)]
+-  [**2023 | ICLR | 🤖**] Maximizing Communication Efficiency for Large-scale Training via 0/1 Adam [[📄 paper](https://arxiv.org/pdf/2202.06009)]
 -  [**2023 | NeurIPS**] Birder: Communication-Efficient 1-bit Adaptive Optimizer for Practical Distributed DNN Training [[📄 paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/7c72fcd7b6bffc3864c7152ab5a2dd83-Paper-Conference.pdf)]
 -  [**2023 | TECS**] Enabling Binary Neural Network Training on the Edge [[📄 paper](https://arxiv.org/pdf/2102.04270)] [[💻 code](https://github.com/awai54st/Enabling-Binary-Neural-Network-Training-on-the-Edge)]
 -  [**2022 | HiPC**] 1-bit LAMB: Communication Efficient Large-Scale Large-Batch Training with LAMB’s Convergence Speed [[📄 paper](https://arxiv.org/abs/2104.06069)]
@@ -112,18 +114,18 @@ A collection of research papers on low-precision training for foundation models,
 
 ## Floating-Point-Based Methods
 
--  [**2025 | ICLR**] COAT: Compressing Optimizer States and Activation for memory efficient FP8 Training [[📄 paper](https://arxiv.org/abs/2410.19313)] [[💻 code](https://github.com/NVlabs/COAT)]
--  [**2025 | arXiv**] Optimizing Large Language Model Training Using FP4 Quantization [[📄 paper](https://arxiv.org/abs/2501.17116)]
--  [**2025 | arXiv**] Towards Efficient Pre-training: Exploring FP4 Precision in Large Language Models [[📄 paper](https://arxiv.org/abs/2502.11458)]
--  [**2024 | arXiv**] DeepSeek-V3 Technical Report [[📄 paper](https://arxiv.org/abs/2412.19437)]
--  [**2024 | arXiv**] Scaling FP8 Training to Trillion-Token LLMs [[📄 paper](https://arxiv.org/abs/2409.12517)]
--  [**2024 | ICML workshop**] Scalify: Scale Propagation for Efficient Low-Precision Llm Training [[📄 paper](https://arxiv.org/abs/2407.17353)] [[💻 code](https://github.com/graphcore-research/jax-scalify)]
+-  [**2025 | ICLR | 🤖**] COAT: Compressing Optimizer States and Activation for memory efficient FP8 Training [[📄 paper](https://arxiv.org/abs/2410.19313)] [[💻 code](https://github.com/NVlabs/COAT)]
+-  [**2025 | arXiv | 🤖**] Optimizing Large Language Model Training Using FP4 Quantization [[📄 paper](https://arxiv.org/abs/2501.17116)]
+-  [**2025 | arXiv | 🤖**] Towards Efficient Pre-training: Exploring FP4 Precision in Large Language Models [[📄 paper](https://arxiv.org/abs/2502.11458)]
+-  [**2024 | arXiv | 🤖**] DeepSeek-V3 Technical Report [[📄 paper](https://arxiv.org/abs/2412.19437)]
+-  [**2024 | arXiv | 🤖**] Scaling FP8 Training to Trillion-Token LLMs [[📄 paper](https://arxiv.org/abs/2409.12517)]
+-  [**2024 | ICML workshop | 🤖**] Scalify: Scale Propagation for Efficient Low-Precision LLM Training [[📄 paper](https://arxiv.org/abs/2407.17353)] [[💻 code](https://github.com/graphcore-research/jax-scalify)]
 -  [**2024 | DATE**] A Stochastic Rounding-Enabled Low-Precision Floating-Point MAC for DNN Training [[📄 paper](https://arxiv.org/abs/2404.14010)]
--  [**2023 | NeurIPS workshop**] Training and Inference of Large Language Models Using 8-Bit Floating Point [[📄 paper](https://arxiv.org/abs/2309.17224)]
--  [**2023 | arXiv**] FP8-LM: Training FP8 large language models [[📄 paper](https://arxiv.org/abs/2310.18313)]
+-  [**2023 | NeurIPS workshop | 🤖**] Training and Inference of Large Language Models Using 8-Bit Floating Point [[📄 paper](https://arxiv.org/abs/2309.17224)]
+-  [**2023 | arXiv | 🤖**] FP8-LM: Training FP8 large language models [[📄 paper](https://arxiv.org/abs/2310.18313)]
 -  [**2022 | ACT**] Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training [[📄 paper](https://www.usenix.org/system/files/atc22-he.pdf)]
 -  [**2022 | arXiv**] 8-Bit Numerical Formats for Deep Neural Networks [[📄 paper](https://arxiv.org/abs/2206.02915)] [[💻 code](https://github.com/chengchingwen/DLFP8Types.jl)]
--  [**2022 | arXiv**] FP8 Formats for Deep Learning [[📄 paper](https://arxiv.org/abs/2209.05433)]
+-  [**2022 | arXiv | 🤖**] FP8 Formats for Deep Learning [[📄 paper](https://arxiv.org/abs/2209.05433)]
 -  [**2022 | arXiv**] Accuracy Booster: Enabling 4-bit Fixed-point Arithmetic for DNN Training [[📄 paper](https://arxiv.org/abs/2211.10737)]
 -  [**2021 | ICLR**] Neural Gradients Are Near-Lognormal: Improved Quantized and Sparse Training [[📄 paper](https://arxiv.org/abs/2006.08173)]
 -  [**2020 | IJCAI**] Reducing Underflow in Mixed Precision Training by Gradient Scaling [[📄 paper](https://www.ijcai.org/proceedings/2020/404)]
@@ -139,9 +141,9 @@ A collection of research papers on low-precision training for foundation models,
 
 ## Customized Format-Based Methods
 
--  [**2025 | arXiv**] Training LLMs with MXFP4 [[📄 paper](https://arxiv.org/abs/2502.20586)]
+-  [**2025 | arXiv | 🤖**] Training LLMs with MXFP4 [[📄 paper](https://arxiv.org/abs/2502.20586)]
 -  [**2025 | arXiv**] Oscillation-Reduced MXFP4 Training for Vision Transformers [[📄 paper](https://arxiv.org/abs/2502.20853)]
--  [**2023 | arXiv**] Microscaling Data Formats for Deep Learning [[📄 paper](https://arxiv.org/abs/2310.10537)]
+-  [**2023 | arXiv | 🤖**] Microscaling Data Formats for Deep Learning [[📄 paper](https://arxiv.org/abs/2310.10537)]
 -  [**2022 | TCADICS**] Exploring the Potential of Low-bit Training of Convolutional Neural Networks [[📄 paper](https://arxiv.org/abs/2006.02804)]
 -  [**2020 | TC**] Evaluations on Deep Neural Networks Training Using Posit Number System [[📄 paper](https://ieeexplore.ieee.org/document/9066876)]
 -  [**2019 | CoNGA**] Posits: The Good, the Bad and the Ugly [[📄 paper](https://dl.acm.org/doi/abs/10.1145/3316279.3316285)]
@@ -151,11 +153,11 @@ A collection of research papers on low-precision training for foundation models,
 
 ## Quantization-Aware Training Methods
 
--  [**2025 | arXiv**] Continual Quantization-Aware Pre-Training: When to transition from 16-bit to 1.58-bit pre-training for BitNet language models? [[📄 paper](https://arxiv.org/abs/2502.11895)]
--  [**2025 | arXiv**] QuEST: Stable Training of LLMs with 1-Bit Weights and Activations [[📄 paper](https://arxiv.org/abs/2502.05003)] [[💻 code](https://github.com/IST-DASLab/QuEST)]
+-  [**2025 | arXiv | 🤖**] Continual Quantization-Aware Pre-Training: When to transition from 16-bit to 1.58-bit pre-training for BitNet language models? [[📄 paper](https://arxiv.org/abs/2502.11895)]
+-  [**2025 | arXiv | 🤖**] QuEST: Stable Training of LLMs with 1-Bit Weights and Activations [[📄 paper](https://arxiv.org/abs/2502.05003)] [[💻 code](https://github.com/IST-DASLab/QuEST)]
 -  [**2025 | arXiv** ] Stabilizing Quantization-Aware Training by Implicit-Regularization on Hessian Matrix [[📄 paper](https://arxiv.org/abs/2503.11159)]
--  [**2024 | ACL**] LLM-QAT: Data-Free Quantization Aware Training for Large Language Models [[📄 paper](https://arxiv.org/abs/2305.17888)] [[💻 code](https://github.com/facebookresearch/LLM-QAT)]
--  [**2024 | ACL**] BitDistiller: Unleashing the Potential of Sub-4-Bit LLMs via Self-Distillation [[📄 paper](https://arxiv.org/abs/2402.10631)] [[💻 code](https://github.com/DD-DuDa/BitDistiller)]
--  [**2024 | arXiv**] EfficientQAT: Efficient Quantization-Aware Training for Large Language Models [[📄 paper](https://arxiv.org/abs/2407.11062)] [[💻 code](https://github.com/OpenGVLab/EfficientQAT)]
--  [**2024 | arXiv**] The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits [[📄 paper](https://arxiv.org/abs/2402.17764)] [[💻 code](https://github.com/microsoft/BitNet)]
--  [**2023 | arXiv**] BitNet: Scaling 1-bit Transformers for Large Language Models [[📄 paper](https://arxiv.org/abs/2310.11453)] [[💻 code](https://github.com/microsoft/BitNet)]
+-  [**2024 | ACL | 🤖**] LLM-QAT: Data-Free Quantization Aware Training for Large Language Models [[📄 paper](https://arxiv.org/abs/2305.17888)] [[💻 code](https://github.com/facebookresearch/LLM-QAT)]
+-  [**2024 | ACL | 🤖**] BitDistiller: Unleashing the Potential of Sub-4-Bit LLMs via Self-Distillation [[📄 paper](https://arxiv.org/abs/2402.10631)] [[💻 code](https://github.com/DD-DuDa/BitDistiller)]
+-  [**2024 | arXiv | 🤖**] EfficientQAT: Efficient Quantization-Aware Training for Large Language Models [[📄 paper](https://arxiv.org/abs/2407.11062)] [[💻 code](https://github.com/OpenGVLab/EfficientQAT)]
+-  [**2024 | arXiv | 🤖**] The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits [[📄 paper](https://arxiv.org/abs/2402.17764)] [[💻 code](https://github.com/microsoft/BitNet)]
+-  [**2023 | arXiv | 🤖**] BitNet: Scaling 1-bit Transformers for Large Language Models [[📄 paper](https://arxiv.org/abs/2310.11453)] [[💻 code](https://github.com/microsoft/BitNet)]
