@@ -3,6 +3,16 @@ A collection of research papers on low-precision training for foundation models,
 
 \*🤖 *indicates the corresponding paper contains experiments using LLM.*
 
+If you find this repository helpful, please consider citing our survey paper:
+```
+@article{hao2025low,
+  title={Low-Precision Training of Large Language Models: Methods, Challenges, and Opportunities},
+  author={Hao, Zhiwei and Guo, Jianyuan and Shen, Li and Luo, Yong and Hu, Han and Wang, Guoxia and Yu, Dianhai and Wen, Yonggang and Tao, Dacheng},
+  journal={arXiv preprint arXiv:2505.01043},
+  year={2025}
+}
+```
+
 ## Contents
   - [**Fixed-Point and Integer-Based Methods**](#Fixed-Point-and-Integer-Based-Methods)
     - [**Fixed-Point**](#Fixed-Point)
