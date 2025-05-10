@@ -3,7 +3,7 @@ A collection of research papers on low-precision training for foundation models,
 
 \*🤖 *indicates the corresponding paper contains experiments using LLM.*
 
-If you find this repository helpful, please consider citing our survey paper:
+If you find this repository helpful, please consider citing our [survey paper](https://arxiv.org/abs/2505.01043):
 ```
 @article{hao2025low,
   title={Low-Precision Training of Large Language Models: Methods, Challenges, and Opportunities},
